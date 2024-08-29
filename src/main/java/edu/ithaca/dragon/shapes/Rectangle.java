@@ -32,7 +32,7 @@ public class Rectangle {
      * @return the longest straight line that can be drawn within this rectangle
      */
     public double longestLineWithin(){
-        throw new RuntimeException("Not implemented yet");
+        return Math.sqrt(width * width + length * length);
     }
     
 }
