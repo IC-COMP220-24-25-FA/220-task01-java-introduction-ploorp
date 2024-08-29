@@ -24,7 +24,8 @@ public class Rectangle {
      * @post doubles the size of this rectangle
      */
     public void doubleSize(){
-        throw new RuntimeException("Not implemented yet");
+        this.length *= Math.sqrt(2);
+        this.width *= Math.sqrt(2);
     }
 
     /**

@@ -25,17 +25,17 @@ public class RectangleTest {
         Rectangle myRectangle = new Rectangle(1, 1);
         double area = myRectangle.calcArea();
         myRectangle.doubleSize();
-        assertEquals(area * 2, myRectangle.calcArea());
+        assertEquals(area * 2, myRectangle.calcArea(), 0.00000001);
 
         myRectangle = new Rectangle(5.5, 5);
         area = myRectangle.calcArea();
         myRectangle.doubleSize();
-        assertEquals(area * 2, myRectangle.calcArea());
+        assertEquals(area * 2, myRectangle.calcArea(), 0.00000001);
     
         myRectangle = new Rectangle(0.001, 5);
         area = myRectangle.calcArea();
         myRectangle.doubleSize();
-        assertEquals(area * 2, myRectangle.calcArea());
+        assertEquals(area * 2, myRectangle.calcArea(), 0.00000001);
     }
 
     @Test
