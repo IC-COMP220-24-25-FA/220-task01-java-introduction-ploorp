@@ -21,6 +21,24 @@ public class RectangleTest {
     }
 
     @Test
+    public void doubleSizeTest(){
+        Rectangle myRectangle = new Rectangle(1, 1);
+        double area = myRectangle.calcArea();
+        myRectangle.doubleSize();
+        assertEquals(area * 2, myRectangle.calcArea());
+
+        myRectangle = new Rectangle(5.5, 5);
+        area = myRectangle.calcArea();
+        myRectangle.doubleSize();
+        assertEquals(area * 2, myRectangle.calcArea());
+    
+        myRectangle = new Rectangle(0.001, 5);
+        area = myRectangle.calcArea();
+        myRectangle.doubleSize();
+        assertEquals(area * 2, myRectangle.calcArea());
+    }
+
+    @Test
     public void TestConstructorError(){
         assertThrows(IllegalArgumentException.class, () -> new Rectangle(0, 0));
         assertThrows(IllegalArgumentException.class, () -> new Rectangle(0, 1));
