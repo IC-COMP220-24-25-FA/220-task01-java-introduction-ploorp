@@ -34,17 +34,17 @@ public class CircleTest {
         Circle myCircle = new Circle(1);
         double area = myCircle.calcArea();
         myCircle.doubleSize();
-        assertEquals(area * 4, myCircle.calcArea());
+        assertEquals(area * 2, myCircle.calcArea(), 0.001);
 
         myCircle = new Circle(5.5);
         area = myCircle.calcArea();
         myCircle.doubleSize();
-        assertEquals(area * 4, myCircle.calcArea());
+        assertEquals(area * 2, myCircle.calcArea(), 0.001);
 
         myCircle = new Circle(0.001);
         area = myCircle.calcArea();
         myCircle.doubleSize();
-        assertEquals(area * 4, myCircle.calcArea());
+        assertEquals(area * 2, myCircle.calcArea(), 0.001);
     }
 
     @Test

@@ -22,7 +22,7 @@ public class Circle {
      * @post doubles the size of this circle
      */
     public void doubleSize(){
-        this.radius *= 2;
+        this.radius *= 1.414213;
     }
 
     /**
