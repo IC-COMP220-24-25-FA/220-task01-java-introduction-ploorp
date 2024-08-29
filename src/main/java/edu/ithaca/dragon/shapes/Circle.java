@@ -15,14 +15,14 @@ public class Circle {
      * @return the area of this circle
      */
     public double calcArea(){
-        return 3.14159 * this.radius * this.radius;
+        return Math.PI * this.radius * this.radius;
     }
 
     /**
      * @post doubles the size of this circle
      */
     public void doubleSize(){
-        this.radius *= 1.414213;
+        this.radius *= Math.sqrt(2);
     }
 
     /**
