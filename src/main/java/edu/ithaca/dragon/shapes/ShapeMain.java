@@ -12,13 +12,11 @@ public class ShapeMain {
 
         Random rand = new Random();
 
-        Rectangle r1 = new Rectangle(rand.nextDouble(19)+1, rand.nextDouble(19)+1);
-        Rectangle r2 = new Rectangle(rand.nextDouble(19)+1, rand.nextDouble(19)+1);
-        Rectangle r3 = new Rectangle(rand.nextDouble(19)+1, rand.nextDouble(19)+1);
-        Rectangle r4 = new Rectangle(rand.nextDouble(19)+1, rand.nextDouble(19)+1);
-        Rectangle r5 = new Rectangle(rand.nextDouble(19)+1, rand.nextDouble(19)+1);
+        Rectangle[] rectangles = new Rectangle[5];
 
-        Rectangle[] rectangles = {r1,r2,r3,r4,r5};
+        for (int i = 0; i < 5; i++){
+            rectangles[i] = new Rectangle(rand.nextDouble(19)+1, rand.nextDouble(19)+1);
+        }
 
         Scanner input = new Scanner(System.in);
 
@@ -36,5 +34,13 @@ public class ShapeMain {
             rectangles[userChoice-1].doubleSize();
             System.out.println("\nrectangle #" + userChoice + " doubled\n");
         }
+
+        System.out.println("final rectangle sizes:");
+
+        for (int j = 0; j < 5; j++){
+            System.out.printf("#%d area: %.2f longest line: %.2f%n", (j+1), rectangles[j].calcArea(), rectangles[j].longestLineWithin());
+        }
+
+        input.close();
     }
 }
