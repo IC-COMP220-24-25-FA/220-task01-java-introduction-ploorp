@@ -55,6 +55,9 @@ public class TriangleTest {
         assertThrows(IllegalArgumentException.class, () -> new Triangle(new double[] {0,1,1}));
         assertThrows(IllegalArgumentException.class, () -> new Triangle(new double[] {0,0,0}));
         assertThrows(IllegalArgumentException.class, () -> new Triangle(new double[] {-1,1,1}));
+
+        assertThrows(IllegalArgumentException.class, () -> new Triangle(new double[] {1,1,10}));
+        assertThrows(IllegalArgumentException.class, () -> new Triangle(new double[] {2,5,1}));
     }
 
 }

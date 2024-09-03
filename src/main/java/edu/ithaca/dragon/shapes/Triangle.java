@@ -5,7 +5,12 @@ public class Triangle {
 
     public Triangle(double[] sidesIn){
         if (sidesIn[0] <= 0 || sidesIn[1] <= 0 || sidesIn[2] <= 0) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("sides must be positive");
+        }
+        if (sidesIn[0] + sidesIn[1] <= sidesIn[2] || 
+            sidesIn[0] + sidesIn[2] <= sidesIn[1] || 
+            sidesIn[1] + sidesIn[2] <= sidesIn[0]) {
+            throw new IllegalArgumentException("not a valid triangle");
         }
         sides = sidesIn;
     }
