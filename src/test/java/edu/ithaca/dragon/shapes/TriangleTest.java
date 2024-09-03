@@ -11,13 +11,13 @@ public class TriangleTest {
     @Test
     public void calcAreaTest(){
         Triangle myTriangle = new Triangle(new double[] {1,1,1});
-        assertEquals(0.433, myTriangle.calcArea());
+        assertEquals(0.433, myTriangle.calcArea(), 0.001);
         
         myTriangle = new Triangle(new double[] {12,10,10});
         assertEquals(48, myTriangle.calcArea());
 
         myTriangle = new Triangle(new double[] {2,10,9});
-        assertEquals(8.1815, myTriangle.calcArea());
+        assertEquals(8.1815, myTriangle.calcArea(), 0.001);
     }
 
     @Test
