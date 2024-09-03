@@ -12,11 +12,14 @@ public class FunctionPracticeTest {
 
     @Test
     public void largestOfThreeTest(){
+        //first three tests are trying different positions for the largest number
         assertEquals(5, FunctionPractice.largestOfThree(4, 5, 2));
         assertEquals(5, FunctionPractice.largestOfThree(5, 4, 2));
         assertEquals(5, FunctionPractice.largestOfThree(4, 2, 5));
+        //testing what happens if all same number
         assertEquals(5, FunctionPractice.largestOfThree(5, 5, 5));
 
+        //ensuring error on negative 
         assertThrows(IllegalArgumentException.class, () -> FunctionPractice.largestOfThree(-1, -1, -1));
         assertThrows(IllegalArgumentException.class, () -> FunctionPractice.largestOfThree(5, -1, 3));
         assertThrows(IllegalArgumentException.class, () -> FunctionPractice.largestOfThree(5, 3, -1));
