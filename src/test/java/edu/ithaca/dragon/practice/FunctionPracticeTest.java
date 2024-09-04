@@ -65,7 +65,7 @@ public class FunctionPracticeTest {
 
     @Test
     public void findFirstMostOccurencesOfLetterTest() {
-        assertEquals("ababa", FunctionPractice.findFirstMostOccurencesOfLetter(Arrays.asList("abc", "ababa", "aaaa", "baba"), 'a'));
+        assertEquals("ababaa", FunctionPractice.findFirstMostOccurencesOfLetter(Arrays.asList("abc", "ababaa", "aaaa", "baba"), 'a'));
         assertEquals("tttt", FunctionPractice.findFirstMostOccurencesOfLetter(Arrays.asList("tt", "ttt", "tttt", "tt"), 't'));
         assertEquals("xxxyyy", FunctionPractice.findFirstMostOccurencesOfLetter(Arrays.asList("xy", "xxxyyy", "yyy", "x"), 'x'));
         assertEquals("", FunctionPractice.findFirstMostOccurencesOfLetter(Arrays.asList("asdf", "def", "ghi"), 'z'));
