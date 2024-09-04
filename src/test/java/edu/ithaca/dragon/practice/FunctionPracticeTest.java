@@ -62,4 +62,13 @@ public class FunctionPracticeTest {
         assertEquals(-1, FunctionPractice.findLastLargest(Arrays.asList()));
         assertEquals(6, FunctionPractice.findLastLargest(Arrays.asList(5, 4, 3, 2, 6, 5, 6)));
     }
+
+    @Test
+    public void findFirstMostOccurencesOfLetterTest() {
+        assertEquals("ababa", FunctionPractice.findFirstMostOccurencesOfLetter(Arrays.asList("abc", "ababa", "aaaa", "baba"), 'a'));
+        assertEquals("tttt", FunctionPractice.findFirstMostOccurencesOfLetter(Arrays.asList("tt", "ttt", "tttt", "tt"), 't'));
+        assertEquals("xxxyyy", FunctionPractice.findFirstMostOccurencesOfLetter(Arrays.asList("xy", "xxxyyy", "yyy", "x"), 'x'));
+        assertEquals("", FunctionPractice.findFirstMostOccurencesOfLetter(Arrays.asList("asdf", "def", "ghi"), 'z'));
+        assertEquals("aabbccdd", FunctionPractice.findFirstMostOccurencesOfLetter(Arrays.asList("abc", "abcd", "aabbccdd", "abcdabcd"), 'b'));
+    }
 }
