@@ -6,6 +6,8 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
 
+import java.util.Arrays;
+
 import org.junit.jupiter.api.Test;
 
 public class FunctionPracticeTest {
@@ -43,4 +45,13 @@ public class FunctionPracticeTest {
         assertFalse(FunctionPractice.isGoodDog(1, 5, true));
     }
     
+    @Test
+    public void findFirstLargestTest() {
+        assertEquals(2, FunctionPractice.findFirstLargest(Arrays.asList(1, 3, 7, 4, 7, 2)));
+        assertEquals(0, FunctionPractice.findFirstLargest(Arrays.asList(10, 9, 8, 7)));
+        assertEquals(3, FunctionPractice.findFirstLargest(Arrays.asList(1, 2, 3, 4, 4)));
+        assertEquals(-1, FunctionPractice.findFirstLargest(Arrays.asList()));
+        assertEquals(4, FunctionPractice.findFirstLargest(Arrays.asList(5, 4, 3, 2, 6, 5, 6)));
+    }
+
 }
