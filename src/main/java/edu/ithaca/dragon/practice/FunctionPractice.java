@@ -87,7 +87,7 @@ public class FunctionPractice {
 
     /**
      * @return the string that has contains the most occurences of the given letter
-     * @throws 
+     * @throws ? idk if it should throw on empty list or no matches
      */
     public static String findFirstMostOccurencesOfLetter(List<String> words, char letter){
         if (words.isEmpty()){throw new IllegalArgumentException("list can't be empty");}
