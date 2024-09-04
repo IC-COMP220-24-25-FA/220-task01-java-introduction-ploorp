@@ -54,4 +54,12 @@ public class FunctionPracticeTest {
         assertEquals(4, FunctionPractice.findFirstLargest(Arrays.asList(5, 4, 3, 2, 6, 5, 6)));
     }
 
+    @Test
+    public void findLastLargestTest() {
+        assertEquals(4, FunctionPractice.findLastLargest(Arrays.asList(1, 3, 7, 4, 7, 2)));
+        assertEquals(0, FunctionPractice.findLastLargest(Arrays.asList(10, 9, 8, 7)));
+        assertEquals(4, FunctionPractice.findLastLargest(Arrays.asList(1, 2, 3, 4, 4)));
+        assertEquals(-1, FunctionPractice.findLastLargest(Arrays.asList()));
+        assertEquals(6, FunctionPractice.findLastLargest(Arrays.asList(5, 4, 3, 2, 6, 5, 6)));
+    }
 }
