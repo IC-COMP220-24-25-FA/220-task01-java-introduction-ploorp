@@ -28,7 +28,9 @@ public class FunctionPractice {
      * @return the final price at register of the given item after discount and tax applied
      */
     public static double calcSalePrice(double originalPrice, double discountPercent, double salesTax){
-        throw new RuntimeException("Not Implemented");
+        double discountPrice = originalPrice * (1 - discountPercent / 100);
+        double taxAmount = discountPrice * (salesTax / 100);
+        return discountPrice + taxAmount;
     }
 
     /**
