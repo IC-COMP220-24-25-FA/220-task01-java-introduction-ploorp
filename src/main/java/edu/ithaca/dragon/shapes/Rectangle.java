@@ -1,6 +1,6 @@
 package edu.ithaca.dragon.shapes;
 
-public class Rectangle {
+public class Rectangle implements Shape {
     private double length;
     private double width;
     
@@ -35,4 +35,7 @@ public class Rectangle {
         return Math.sqrt(width * width + length * length);
     }
     
+    public String toString(){
+        return String.format("RECTANGLE - length: %.2f width: %.2f", this.length, this.width);
+    }
 }
