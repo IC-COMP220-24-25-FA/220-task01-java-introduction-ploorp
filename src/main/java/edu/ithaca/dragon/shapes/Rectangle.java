@@ -36,6 +36,6 @@ public class Rectangle implements Shape {
     }
     
     public String toString(){
-        return "length: " + this.length + " width: " + this.width;
+        return "RECTANGLE - length: " + this.length + " width: " + this.width;
     }
 }

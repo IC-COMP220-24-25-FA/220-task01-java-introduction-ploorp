@@ -33,6 +33,6 @@ public class Circle implements Shape {
     }
 
     public String toString(){
-        return "radius: " + this.radius;
+        return "CIRCLE - radius: " + this.radius;
     }
 }
