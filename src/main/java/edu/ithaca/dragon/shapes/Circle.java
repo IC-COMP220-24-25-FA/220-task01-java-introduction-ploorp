@@ -31,4 +31,8 @@ public class Circle implements Shape {
     public double longestLineWithin(){
         return this.radius * 2;
     }
+
+    public String toString(){
+        return "radius: " + this.radius;
+    }
 }

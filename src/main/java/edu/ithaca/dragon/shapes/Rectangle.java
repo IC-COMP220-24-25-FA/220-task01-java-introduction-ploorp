@@ -35,4 +35,7 @@ public class Rectangle implements Shape {
         return Math.sqrt(width * width + length * length);
     }
     
+    public String toString(){
+        return "length: " + this.length + " width: " + this.width;
+    }
 }

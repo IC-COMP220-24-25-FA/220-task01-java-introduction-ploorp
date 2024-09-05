@@ -36,4 +36,7 @@ public class Triangle implements Shape {
         return Math.max(sides[0], Math.max(sides[1], sides[2]));
     }
 
+    public String toString(){
+        return "sideA: " + this.sides[0] + " sideB: " + this.sides[1] + " sideC: " + this.sides[2];
+    }
 }
