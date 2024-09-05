@@ -37,6 +37,6 @@ public class Triangle implements Shape {
     }
 
     public String toString(){
-        return "TRIANGLE - sideA: " + this.sides[0] + " sideB: " + this.sides[1] + " sideC: " + this.sides[2];
+        return String.format("TRIANGLE - sideA: %.2f sideB: %.2f sideC: %.2f", this.sides[0], this.sides[1], this.sides[2]);
     }
 }
