@@ -35,9 +35,9 @@ public class ShapeMain {
 
         System.out.println("\ndoubled sizes below\n");
 
-        for (Shape s : shapes) {
+        for (Shape s : shapes){
             s.doubleSize();
-            System.out.println( s.toString());
+            System.out.println(s.toString());
         }
     }
 
